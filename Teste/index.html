@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Animado!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">Carregando pergunta...</h2>
+            <ul>
+                </ul>
+        </div>
+        <button id="submit">Próxima Pergunta</button>
+    </div>
+
+    <div class="results-container hidden" id="results">
+         <h2>Quiz Finalizado!</h2>
+         <p>Você acertou <span id="score">0</span> de <span id="total">0</span> perguntas.</p>
+         <button onclick="location.reload()">Jogar Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
